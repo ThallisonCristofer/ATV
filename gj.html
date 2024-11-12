@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <style>
+         #letra {
+         color: aliceblue;
+         font-size: 30px;
+         font-weight: bolder;
+         }
+         body {
+         backgroud-image: url("bjj.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         backgroud-color: rgba(255, 255, 255, 0.5);
+         background-blend-mode: overlay;
+         }
+         /* Style for rounded buttons */
+         button { 
+         border: none; /* Remove default border */
+         outline: none; /* Remove default outline */
+         padding: 10px 20px; /* Adjust padding as needed */
+         border-radius: 50px; /* Set button radius for roundness */
+         cursor: pointer; /* Change cursor on hover for better UX */
+         margin: 5px; /* Add some margin between buttossns */
+         backgroud-color: #0bfc13; /* Green color for buttons */
+         color: rgb(247, 0, 0); /* White text color */
+         }
+         /* Style for hover effect (optional) */
+         button:hover {
+         backgroud-color#3e8341; /* darker green on hover */
+      </style>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" contet="Ie-edge" />
+      <meta name="Viewport" content="width-device-width" initial-scale="1.0" />
+      <title> Vídeo e Audio 2</title>
+   </head>
+   <body bgcolor="iceblue">
+      <marquee id="Letra" direction="down" scrollamount="10" height="250" height="200" style="borde: red 5px solid"; behavior="alternative" vspace="1">
+         <marquee behavior="alternative"> Jiu-Jitsu </marquee>
+      </marquee>
+      <div>
+         <button onclick="documnet.getElementByid('player).play()">Play</button>
+         <button onclick="documnet.getElementByid('player).pause()">Pause</button>
+         <button onclick="documnet.getElementByid('player).volume+=0.1">Aumentar Volume</button>
+         <button onclick="documnet.getElementByid('player).volume-=0.1">Diminuir Volume</button>
+      </div>
+      <div id="btn">
+         <audio id="Player" autoplay="autoplay" controls="control" loop>
+            <source src=""C:\Users\Aluno\Documents\Thallison Progamador WEB\audios\y2meta.com - 🎵 Trajetória de Vitória - Bili MC ● RAP DE JIU-JITEIRO (128 kbps).mp3" type="audio/mp3" />
+            Seu navegador não suporta HTML 5
+         </audio>
+      </div>
+   </body>
+   <html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeo e Áudio 2</title>
+    <style>
+        #letra {
+            color: gray;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        body {
+            background-image: url(bjj.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.5);
+            background-blend-mode: overlay;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 5px;
+            background-color: #0bfc13;
+            color: rgb(247, 0, 0);
+        }
+
+        button:hover {s
+            background-color: #3e8341;
+        }
+    </style>
+</head>
+
+<body bgcolor="iceblue">
+    <marquee id="letra" direction="down" scrollamount="10" height="250" height="200" style="border: blue 5px solid;" behavior="alternate" vspace="1">
+        <marquee behavior="alternate"> Jiu-Jitsu </marquee>
+    </marquee>
+    <div>
+        <button onclick="document.getElementById('player').play()">Play</button>
+        <button onclick="document.getElementById('player').pause()">Pause</button>
+        <button onclick="document.getElementById('player').volume += 0.1">Aumentar Volume</button>
+        <button onclick="document.getElementById('player').volume -= 0.1">Diminuir Volume</button>
+    </div>
+    <div id="btn">
+        <audio id="player" autoplay="autoplay" controls="control" loop>
+            <source src="audios/Trajetória de Vitória.mp3" type="audio/mp3" /> Seu navegador não suporta HTML5.
+        </audio>
+    </div>
+</body>
+
+</html>
